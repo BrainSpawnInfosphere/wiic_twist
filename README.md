@@ -12,7 +12,7 @@
 
 **Description:** Utilizes the wiic library ported to [http://www.ros.org ROS] and example code that talks to the Wii controller to publish twist messages to a robot. The wiic library can detect multiple wiimotes and talk to them.
 
-	svn checkout http://walchko-ros-pkg.googlecode.com/svn/trunk/unstable/wiic_twist 
+	git clone git://github.com/walchko/wiic_twist.git
 	rosmake wiic_twist
  	rosrun wiic_twist wiic_twist
   	press buttons 1 + 2 for the wiimote to sync
