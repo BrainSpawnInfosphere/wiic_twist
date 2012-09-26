@@ -8,7 +8,7 @@
   <license>GPLv3</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/wiic_twist</url>
-  <depend package="wiic"/>
+  <!--depend package="wiic"/-->
   <!--depend package="joy"/-->
   <depend package="geometry_msgs"/>
   <depend package="sensor_msgs"/>

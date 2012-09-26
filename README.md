@@ -8,9 +8,11 @@
 
 **Website:** http://wiic.sourceforge.net
 
-**Dependencies:** wiic
+**Dependencies:** None
 
-**Description:** Utilizes the wiic library ported to [http://www.ros.org ROS] and example code that talks to the Wii controller to publish twist messages to a robot. The wiic library can detect multiple wiimotes and talk to them.
+**Description:** Utilizes the wiic library ported to [http://www.ros.org ROS] and example 
+code that talks to the Wii controller to publish twist messages to a robot. The wiic 
+library can detect multiple wiimotes and talk to them.
 
 	git clone git://github.com/walchko/wiic_twist.git
 	rosmake wiic_twist
@@ -31,4 +33,8 @@
 
 ## Changes
 
-**Jan 2011** Modified example code and ported to ROS. Compiles and works under OS X 10.6.6 and ROS Diamondback
+**Sep 2012** Wiic is now a homebrew rosdep requirement. Current wiic has an issue with
+Mountain Lion and doesn't connect to wiimote ... working issue.
+
+**Jan 2011** Modified example code and ported to ROS. Compiles and works under OS X 
+10.6.6 and ROS Diamondback

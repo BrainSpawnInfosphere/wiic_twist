@@ -29,13 +29,15 @@ rosbuild_genmsg()
 #rosbuild_add_executable(example examples/example.cpp)
 #target_link_libraries(example ${PROJECT_NAME})
 
-SET(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake_modules/")
+#SET(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake_modules/")
+include_directories("/usr/local/include")
 
 rosbuild_add_executable(wiic_twist src/wiic_twist.cpp)
 target_link_libraries(wiic_twist wiicpp)
+set(CMAKE_EXE_LINKER_FLAGS "-lwiicpp -lwiic" )
 
-rosbuild_add_executable(wiic_test src/wiic_test.cpp)
-target_link_libraries(wiic_twist wiicpp)
+#rosbuild_add_executable(wiic_test src/wiic_test.cpp)
+#target_link_libraries(wiic_twist wiicpp)
 
 
  

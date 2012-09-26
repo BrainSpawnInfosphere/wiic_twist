@@ -149,10 +149,10 @@ int main(int argc, char** argv)
 	
 	ROS_INFO("Found %d wiimotes ... Connected to %d wiimotes", numFound, numConnected);
 	
-	if(numConnected != 1){ // only connecting to one controller
-		ROS_ERROR("Too many controllers found");
-		exit(-1);
-	}
+	//if(numConnected != 1){ // only connecting to one controller
+		ROS_ERROR("Too many controllers found: %i",numConnected);
+	//	exit(-1);
+	//}
 	
 	// grab first (and only) wiimote
 	wm = wiimotes[0];
